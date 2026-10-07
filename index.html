@@ -64,7 +64,7 @@
     @media(max-width:900px){.hero-art{min-height:480px;max-width:620px}.hero-person--yulia{height:80%;width:50%}.hero-person--sasha{height:69%;width:42%}}
     @media(max-width:620px){.hero-art{min-height:410px}.hero-person--yulia{left:7%;width:51%;height:78%}.hero-person--sasha{right:2%;width:43%;height:67%}.hero-person figcaption{font-size:11px;padding:7px 9px;bottom:10px;left:10px}}
     /* Saturated brand red shared by headings, buttons, dividers, and portraits. */
-    :root{--red:#e00016}
+    :root{--red:#e00016;--sky:#b8def4;--sky-hover:#96cce9;--sky-soft:#e6f4fb;--sky-line:#b9dced}
     .marquee b,.contact .eyebrow{color:var(--red)!important}
     .hero-person--sasha{box-shadow:10px 10px 0 var(--red)}
     .button:hover,.format.featured .button:hover{background:#b90012}
@@ -83,6 +83,13 @@
     .format.mini-group h3{color:var(--red)}
     .format.mini-group .button.outline{background:var(--red);border-color:var(--red);color:#fff}
     .format.mini-group .button.outline:hover{background:#b90012;border-color:#b90012;color:#fff}
+    /* Sky blue echoes the MacBook and Alexander's portrait without competing with the red purchase CTAs. */
+    .head-links .head-cta{background:var(--sky);border-color:var(--sky);color:#191919}
+    .head-links .head-cta:hover{background:var(--sky-hover);border-color:var(--sky-hover);color:#191919!important}
+    .result:nth-child(3){background:var(--sky-soft);border-color:var(--sky-line);border-top:5px solid var(--sky)}
+    .contact .side .button.secondary{background:var(--sky);border-color:var(--sky);color:#191919}
+    .contact .side .button.secondary:hover{background:var(--sky-hover);border-color:var(--sky-hover);color:#191919}
+    .head-cta:focus-visible,.contact .side .button.secondary:focus-visible{outline:3px solid #171717;outline-offset:3px}
     @media(max-width:900px){.hero{padding-top:24px;gap:26px}.hero-copy{grid-template-columns:1fr;gap:24px}.hero-actions{max-width:560px}}
     @media(max-width:620px){.hero{padding-block:18px 54px;gap:24px}.hero-lead{font-size:clamp(25px,7vw,34px)}.hero-small{margin-top:14px}.hero-actions{gap:18px}}
   </style>
