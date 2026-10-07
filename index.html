@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f2ee">
   <meta name="description" content="Нейрозапуск для экспертов: подготовьте запуск продукта и настройте AI-команду под свои задачи. Мини-группа — 2 недели, индивидуальное сопровождение — 4 недели.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Нейрозапуск — своя AI-команда и системный запуск">
+  <meta property="og:description" content="Программа для экспертов: мини-группа на 2 недели или индивидуальное сопровождение на 4 недели.">
+  <meta property="og:url" content="https://juliyanikitina.github.io/neurozapusk/">
+  <meta property="og:image" content="https://juliyanikitina.github.io/neurozapusk/assets/neurozapusk-social-preview.png">
+  <meta property="og:image:alt" content="Нейрозапуск — Юлия Никитина и Александр Худоерко">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://juliyanikitina.github.io/neurozapusk/assets/neurozapusk-social-preview.png">
   <title>Нейрозапуск — экспертный запуск с AI-командой</title>
   <style>
     :root{--bg:#171717;--panel:#232323;--panel2:#2c2c2c;--white:#f5f4f0;--muted:#b2b2ad;--red:#ed372c;--line:#454545;--max:1160px}
@@ -55,6 +63,25 @@
     .hero-person--sasha{right:2%;top:5%;width:43%;height:67%;box-shadow:10px 10px 0 #d52724}.hero-person--sasha img{object-position:center 16%}
     @media(max-width:900px){.hero-art{min-height:480px;max-width:620px}.hero-person--yulia{height:80%;width:50%}.hero-person--sasha{height:69%;width:42%}}
     @media(max-width:620px){.hero-art{min-height:410px}.hero-person--yulia{left:7%;width:51%;height:78%}.hero-person--sasha{right:2%;width:43%;height:67%}.hero-person figcaption{font-size:11px;padding:7px 9px;bottom:10px;left:10px}}
+    /* Saturated brand red shared by headings, buttons, dividers, and portraits. */
+    :root{--red:#e00016}
+    .marquee b,.contact .eyebrow{color:var(--red)!important}
+    .hero-person--sasha{box-shadow:10px 10px 0 var(--red)}
+    .button:hover,.format.featured .button:hover{background:#b90012}
+    .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .hero{display:flex;flex-direction:column;align-items:stretch;min-height:0;padding-block:34px 72px;gap:34px}
+    .hero:before{content:none}
+    .hero-cover{width:100%;background:#fff;overflow:hidden}
+    .hero-cover img{display:block;width:100%;height:auto}
+    .hero-copy{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,330px);align-items:end;gap:36px}
+    .hero-copy .eyebrow{margin-bottom:16px}
+    .hero-lead{margin:0;font-size:clamp(26px,3vw,43px);line-height:1.08;max-width:680px}
+    .hero-small{margin:17px 0 0;max-width:710px}
+    .hero-actions{display:flex;flex-direction:column;align-items:stretch;gap:18px}
+    .hero-actions .button{width:100%}
+    .hero-tags{margin-top:0}
+    @media(max-width:900px){.hero{padding-top:24px;gap:26px}.hero-copy{grid-template-columns:1fr;gap:24px}.hero-actions{max-width:560px}}
+    @media(max-width:620px){.hero{padding-block:18px 54px;gap:24px}.hero-lead{font-size:clamp(25px,7vw,34px)}.hero-small{margin-top:14px}.hero-actions{gap:18px}}
   </style>
 </head>
 <body>
@@ -64,15 +91,19 @@
   </header>
   <main id="top">
     <div class="wrap hero">
+      <div class="hero-cover"><img src="assets/neurozapusk-social-preview.png" alt="Нейрозапуск — Юлия Никитина и Александр Худоерко" loading="eager"></div>
       <div class="hero-copy">
-        <div class="eyebrow">Индивидуальная работа и мини-группа для экспертов</div>
-        <h1>Нейро<em>запуск</em></h1>
-        <p class="hero-lead">Один эксперт. Своя AI-команда. Системный запуск.</p>
-        <p class="hero-small">От предложения продукта — к рабочей системе контента и заявок: за две недели в мини-группе или за четыре недели индивидуально. Александр поможет выстроить запуск, Юлия — настроить помощников под твои задачи. Один продукт. Один понятный путь клиента.</p>
-        <a class="button" href="#formats">Выбрать формат <span class="arrow" aria-hidden="true">↗</span></a>
-        <div class="hero-tags"><span class="tag">2 недели в группе / 4 недели лично</span><span class="tag">Живые встречи</span><span class="tag">Мини-группа 5–6 человек / лично</span></div>
+        <div class="hero-copy-text">
+          <div class="eyebrow">Индивидуальная работа и мини-группа для экспертов</div>
+          <h1 class="visually-hidden">Нейрозапуск</h1>
+          <p class="hero-lead">Один эксперт. Своя AI-команда. Системный запуск.</p>
+          <p class="hero-small">От предложения продукта — к рабочей системе контента и заявок: за две недели в мини-группе или за четыре недели индивидуально. Александр поможет выстроить запуск, Юлия — настроить помощников под твои задачи. Один продукт. Один понятный путь клиента.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="button" href="#formats">Выбрать формат <span class="arrow" aria-hidden="true">↗</span></a>
+          <div class="hero-tags"><span class="tag">2 недели в группе / 4 недели лично</span><span class="tag">Живые встречи</span><span class="tag">Мини-группа 5–6 человек / лично</span></div>
+        </div>
       </div>
-      <div class="hero-art" aria-label="Юлия и Александр — ведущие программы"><div class="hero-red" aria-hidden="true"></div><figure class="hero-person hero-person--yulia"><img src="assets/yulia-red-jacket-macbook-no-mug.png" alt="Юлия — эксперт по AI-инструментам" loading="eager"><figcaption>Юлия · AI</figcaption></figure><figure class="hero-person hero-person--sasha"><img src="assets/alexander-light-office.png" alt="Александр — продюсер запусков" loading="eager"><figcaption>Александр · запуск</figcaption></figure></div>
     </div>
     <div class="marquee"><div class="wrap marquee-inner"><span>Стратегия <b>↗</b></span><span>AI-команда <b>↗</b></span><span>Контент <b>↗</b></span><span>Заявки <b>↗</b></span></div></div>
     <section class="section wrap" id="result">
@@ -110,8 +141,8 @@
     <section class="section wrap" id="team">
       <div class="section-head"><div><div class="section-no">05 / КТО РЯДОМ С ТОБОЙ</div><h2>Два специалиста.<br>Один проект.</h2></div></div>
       <div class="team-grid">
-        <article class="person"><img src="assets/yulia-red-jacket-macbook-no-mug.png" alt="Юлия Никитина" loading="lazy"><div class="copy"><span class="role">AI-система и инструменты</span><h3>Юлия Никитина</h3><p>Помогает настроить помощников под твои задачи и научиться управлять их работой.</p></div></article>
-        <article class="person"><img src="assets/alexander-light-office.png" alt="Александр Худоерко" loading="lazy"><div class="copy"><span class="role">Продукт и запуск</span><h3>Александр Худоерко</h3><p>Помогает сформулировать предложение, выстроить путь клиента и план запуска.</p></div></article>
+        <article class="person"><img src="assets/yulia-red-circles.png" alt="Юлия Никитина" loading="lazy"><div class="copy"><span class="role">AI-система и инструменты</span><h3>Юлия Никитина</h3><p>Помогает настроить помощников под твои задачи и научиться управлять их работой.</p></div></article>
+        <article class="person"><img src="assets/alexander-red-circles.png" alt="Александр Худоерко" loading="lazy"><div class="copy"><span class="role">Продукт и запуск</span><h3>Александр Худоерко</h3><p>Помогает сформулировать предложение, выстроить путь клиента и план запуска.</p></div></article>
       </div>
     </section>
     <section class="wrap contact" id="contact"><div class="main"><div class="eyebrow" style="color:#fff">06 / СЛЕДУЮЩИЙ ШАГ</div><h2>Запуск начинается<br>с решения.</h2><p>Выбери формат. Коротко расскажи, какой продукт хочешь запускать, — мы ответим, подойдёт ли тебе программа.</p></div><div class="side"><a class="button" href="https://t.me/juliyanikitina_ai" target="_blank" rel="noopener noreferrer">Написать Юле в Telegram <span class="arrow" aria-hidden="true">↗</span></a><a class="button secondary" href="https://t.me/kozirniy13" target="_blank" rel="noopener noreferrer">Написать Александру в Telegram <span class="arrow" aria-hidden="true">↗</span></a><p>Отдельный бот для заявок «Нейрозапуска» ещё готовится. До его подключения можно написать лично. Оплата на этом сайте пока не принимается.</p></div></section>
