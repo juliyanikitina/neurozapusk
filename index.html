@@ -56,10 +56,10 @@
     .format.featured{box-shadow:inset 0 0 0 1px #333,0 18px 35px rgba(0,0,0,.08)}
     .format-gift{display:grid;grid-template-columns:58px minmax(0,1fr);align-items:center;gap:14px;margin-top:24px;padding:20px 22px;background:#fff;color:#191919;border-left:6px solid #f4c400;line-height:1.35}
     .format-gift-icon{display:block;width:58px;height:58px;grid-row:1 / span 3}
-    .format-gift strong{color:var(--red);font-size:15px;letter-spacing:.08em;text-transform:uppercase}
+    .format-gift strong{color:var(--red);font-size:18px;letter-spacing:.02em;text-transform:uppercase}
     .format-gift-items{font-size:17px;font-weight:700}
-    .format-gift-items span{display:block}
-    .format-gift-total{font-size:14px;color:#514b42}.format-gift-total b{color:var(--red)}
+    .format-gift-items span{display:flex;justify-content:space-between;gap:8px}.format-gift-items b{white-space:nowrap}
+    .format-gift-total{font-size:16px;color:#514b42}.format-gift-total b{display:block;margin-top:3px;color:var(--red);font-size:20px;line-height:1.15}
     .contact h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;text-transform:none;letter-spacing:-.055em;line-height:1.02}
     .contact .side .button{font-size:13px;letter-spacing:.01em;padding-inline:12px;gap:8px;text-align:center}.contact .side .button.secondary{background:#fff;border-color:#fff;color:#202020}.contact .side .button.secondary:hover{background:#e9e7e3;border-color:#e9e7e3;color:#202020}
     @media(max-width:620px){.section-head{margin-bottom:30px}.section h2{font-size:clamp(39px,10.5vw,56px)}.intro{font-size:16px}.wide-panel .left p{font-size:34px}}
@@ -86,12 +86,12 @@
     .hero-actions{display:flex;flex-direction:column;align-items:stretch;gap:18px}
     .hero-actions .button{width:100%}
     .hero-tags{margin-top:0}
-    /* Keep the header CTA neutral; sky blue remains only on Alexander's contact button. */
-    .contact .side .button.secondary{background:var(--sky);border-color:var(--sky);color:#191919}
-    .contact .side .button.secondary:hover{background:var(--sky-hover);border-color:var(--sky-hover);color:#191919}
+    /* Keep both secondary calls to action neutral; Julia's button remains red. */
+    .contact .side .button.secondary{background:#fff;border-color:#fff;color:#191919}
+    .contact .side .button.secondary:hover{background:#e9e7e3;border-color:#e9e7e3;color:#191919}
     .head-cta:focus-visible,.contact .side .button.secondary:focus-visible{outline:3px solid #171717;outline-offset:3px}
     @media(max-width:900px){.hero{padding-top:24px;gap:26px}.hero-copy{grid-template-columns:1fr;gap:24px}.hero-actions{max-width:560px}}
-    @media(max-width:620px){.hero{padding-block:18px 54px;gap:24px}.hero-lead{font-size:clamp(25px,7vw,34px)}.hero-small{margin-top:14px}.hero-actions{gap:18px}.format-gift{grid-template-columns:46px minmax(0,1fr);gap:8px 12px;padding:18px 15px}.format-gift-icon{width:46px;height:46px}.format-gift-items{font-size:15px}.format-gift-total{font-size:13px}}
+    @media(max-width:620px){.hero{padding-block:18px 54px;gap:24px}.hero-lead{font-size:clamp(25px,7vw,34px)}.hero-small{margin-top:14px}.hero-actions{gap:18px}.format-gift{grid-template-columns:46px minmax(0,1fr);gap:8px 12px;padding:18px 15px}.format-gift-icon{width:46px;height:46px}.format-gift strong{font-size:15px}.format-gift-items{font-size:15px}.format-gift-total{font-size:13px}.format-gift-total b{font-size:18px}}
   </style>
 </head>
 <body>
@@ -121,7 +121,7 @@
       <div class="result-grid">
         <article class="result"><div class="num">01 — ПРОДУКТ</div><div><h3>Ясно, что продаёшь</h3><p>Один продукт, аудитория, результат для клиента, предложение и путь к заявке.</p></div></article>
         <article class="result"><div class="num">02 — ЗАПУСК</div><div><h3>Путь к первым клиентам</h3><p>Запускаешь предложение: контент, путь к заявке, обработка откликов и разговоры с потенциальными клиентами.</p></div></article>
-        <article class="result"><div class="num">03 — AI-СИСТЕМА</div><div><h3>AI-помощники</h3><p>На базе ChatGPT и Codex настроишь управляемое рабочее пространство с AI-агентами под свой проект: задашь им роли, инструкции и реальные задачи. Ты управляешь процессом и проверяешь результат.</p></div></article>
+        <article class="result"><div class="num">03 — AI-СИСТЕМА</div><div><h3>AI-агенты</h3><p>На базе ChatGPT и Codex настроишь управляемое рабочее пространство с агентами под свой проект: задашь им роли, инструкции и реальные задачи. Ты управляешь процессом и проверяешь результат.</p></div></article>
       </div>
       <div class="wide-panel"><div class="left"><p>Ты задаёшь направление. AI-команда помогает делать работу.</p></div><div class="right"><p>Агенты могут готовить материалы, разбирать данные, поддерживать контент-процесс и помогать вести клиента по согласованному сценарию.</p><small>Ты управляешь процессом: ставишь задачи, утверждаешь материалы и видишь результат работы своей AI-команды.</small></div></div>
     </section>
@@ -144,7 +144,7 @@
     <section class="section wrap" id="formats">
       <div class="section-head"><div><div class="section-no">04 / УЧАСТИЕ</div><h2>Личная работа.<br>Система под твой проект.</h2></div><p class="intro">Работаем индивидуально: продюсер помогает выстроить продукт и запуск, AI-эксперт — настроить команду помощников.</p></div>
       <div class="format-grid">
-        <article class="format featured"><div class="format-label">Индивидуальное сопровождение · 4 недели</div><h3>Настраиваем под твой запрос.</h3><p>Четыре недели личной работы с двумя экспертами. Вместе определяем задачи проекта, настраиваем систему, проверяем её на практике и передаём тебе управление.</p><ul><li>Индивидуальная стратегия одного продукта</li><li>Настройка согласованных AI-помощников и пути к заявке</li><li>Личное сопровождение и передача системы</li></ul><div class="format-gift"><svg class="format-gift-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 26h36v29H14z" fill="#ffd236"/><path d="M10 21h44v10H10z" fill="#ffe066"/><path d="M28 21h8v34h-8z" fill="#e00016"/><path d="M9 25h46v5H9z" fill="#e00016"/><path d="M32 20C16 21 14 15 18 11c5-5 12 2 14 9Zm0 0c16 1 18-5 14-9-5-5-12 2-14 9Z" fill="none" stroke="#e00016" stroke-width="4" stroke-linejoin="round"/><circle cx="32" cy="21" r="4" fill="#e00016"/></svg><strong>В подарок при участии</strong><div class="format-gift-items"><span>Сайт эксперта — 50 000 ₽</span><span>Цифровая визитка — 5 000 ₽</span></div><div class="format-gift-total">При отдельном заказе — 55 000 ₽. <b>Для тебя — в подарок.</b></div></div><div class="format-price">99 999 <span>₽</span></div><a class="button" href="https://t.me/neurozapusk_julia_bot?start=landing_individual" target="_blank" rel="noopener noreferrer">Обсудить личную работу <span class="arrow" aria-hidden="true">↗</span></a></article>
+        <article class="format featured"><div class="format-label">Индивидуальное сопровождение · 4 недели</div><h3>Настраиваем под твой запрос.</h3><p>Четыре недели личной работы с двумя экспертами. Вместе определяем задачи проекта, настраиваем систему, проверяем её на практике и передаём тебе управление.</p><ul><li>Индивидуальная стратегия одного продукта</li><li>Настройка согласованных агентов и пути к заявке</li><li>Личное сопровождение и передача системы</li></ul><div class="format-gift"><svg class="format-gift-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 26h36v29H14z" fill="#ffd236"/><path d="M10 21h44v10H10z" fill="#ffe066"/><path d="M28 21h8v34h-8z" fill="#e00016"/><path d="M9 25h46v5H9z" fill="#e00016"/><path d="M32 20C16 21 14 15 18 11c5-5 12 2 14 9Zm0 0c16 1 18-5 14-9-5-5-12 2-14 9Z" fill="none" stroke="#e00016" stroke-width="4" stroke-linejoin="round"/><circle cx="32" cy="21" r="4" fill="#e00016"/></svg><strong>Подарок каждому участнику</strong><div class="format-gift-items"><span>Сайт эксперта <b>55 555 ₽</b></span><span>Цифровая визитка <b>5 555 ₽</b></span></div><div class="format-gift-total">Экономия более 55 000 ₽. <b>Для тебя всё в подарок!</b></div></div><div class="format-price">99 999 <span>₽</span></div><a class="button" href="https://t.me/neurozapusk_julia_bot?start=landing_individual" target="_blank" rel="noopener noreferrer">Обсудить личную работу <span class="arrow" aria-hidden="true">↗</span></a></article>
       </div>
     </section>
     <section class="section wrap" id="team">
